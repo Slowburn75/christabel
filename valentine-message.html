@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Message</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            text-align: center;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            min-height: 100vh; /* Use min-height instead of height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            overflow: auto; /* Change from 'hidden' to 'auto' */
+            margin: 0;
+            color: white;
+        }
+
+        h1 {
+            font-family: "Dancing Script", cursive;
+            font-size: 3rem;
+        }
+
+        .message-container {
+            text-align: center;
+            padding: 20px;
+            max-width: 600px;
+        }
+
+        .love-list {
+            list-style-type: none;
+            padding: 0;
+            text-align: left;
+            max-width: 500px;
+            margin: auto;
+            font-size: 1.2rem;
+        }
+
+        .love-list li {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 8px;
+        }
+
+        .heart {
+            font-size: 3rem;
+            animation: float 2s infinite alternate;
+        }
+
+        @keyframes float {
+            from {
+                transform: translateY(0px);
+            }
+            to {
+                transform: translateY(10px);
+            }
+        }
+
+        .back-btn {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            background-color: white;
+            color: #ff4e78;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .back-btn:hover {
+            background-color: #ff4e78;
+            color: white;
+        }
+
+        .message-container {
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="message-container">
+        <h1>You said YES! ❤️</h1>
+        <p>Angry bird,Here are 20 unserious reasons why I love you:</p>
+        <ul class="love-list">
+            <li>1. You bought me sharwama on my brokest night. 🍕</li>
+            <li>2. You laugh at my terrible jokes like they’re actually funny. 😂</li>
+            <li>3. You make my bad days feel like a cozy Netflix night. 🎬</li>
+            <li>4. You eat like thief. 😂</li>
+            <li>5. You  have a flufy belly, parted like harmburger. 😍</li>
+            <li>6. You somehow never finish your drink but still take mine. 🥤</li>
+            <li>7. Your stubborn ass drinks more than your light head can carry. 🥤</li>
+            <li>8. You gave the best fake angry face the day i called you a baby. 😠</li>
+            <li>9. You lie down on my bed, and make my sheets smell better. 👕</li>
+            <li>10. You turn me into a baby sitter and guide, wherever we go for a drink. 🥤</li>
+            <li>11. You make me narrate my day like a story. 🚗</li>
+            <li>12. You know exactly how much pepper I can (barely) handle in my noodles. 🌶️</li>
+            <li>13. You have he cutest, yet horrible laugh . 😍</li>
+            <li>14. You make my playlists 100x bad with your horible music taste. 🎶</li>
+            <li>15. You said “just 5 minutes” and actually took 15 the last night we went out. ⏳</li>
+            <li>16. You somehow always win at arguements. ✌️</li>
+            <li>17. You make everyday moments feel special. 💫</li>
+            <li>18. You have an entire conversation with just your facial expressions. 🥴</li>
+            <li>19. You make me feel like the luckiest person in the world. 💖</li>
+            <li>20. You’re YOU, and that’s the best reason of all. 😘</li>
+        </ul>
+        <div class="heart">Desined with ❤️ by Slowburn</div>
+        <a href="index.html" class="back-btn">Back to Home</a>
+    </div>
+
+    <audio autoplay loop id="bg-music">
+        <source src="Stephen_Sanchez_-_Until_I_Found_You.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let audio = document.getElementById("bg-music");
+            audio.volume = 0.5; // Set volume to 50%
+            audio.play().catch(() => {
+                console.log("Autoplay blocked. Waiting for user interaction.");
+            });
+        });
+    </script>
+    
+    
+
+</body>
+</html>
