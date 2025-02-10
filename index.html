@@ -17,12 +17,14 @@
             flex-direction: column;
             overflow: hidden;
             position: relative;
+            margin: 0;
         }
 
         h1 {
             font-family: 'Dancing Script', cursive;
             font-size: 3rem;
             color: white;
+            margin: 0;
         }
 
         .buttons {
@@ -54,6 +56,37 @@
             background-color: white;
             color: #ff4e78;
             position: absolute;
+        }
+
+        /* Media Queries for responsiveness */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            button {
+                font-size: 1.2rem;
+                padding: 8px 16px;
+            }
+
+            #no {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            button {
+                font-size: 1rem;
+                padding: 6px 12px;
+            }
+
+            #no {
+                font-size: 1rem;
+            }
         }
     </style>
 </head>
